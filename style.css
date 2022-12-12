@@ -1,0 +1,92 @@
+.justcontent-start{
+    /*sol tarafa hizalama*/
+    display: flex;
+    justify-content: start;
+}
+.justcontent-end{
+    /*sağ tarafa hizalama*/
+    display: flex;
+    justify-content: end;
+}
+.justcontent-center{
+    /*ortaya hizalama*/
+    display: flex;
+    justify-content: center;
+}
+.justcontent-spacebet{
+    /*eşit aralıklar ile yatay*/
+    display: flex;
+    justify-content: space-between;
+}
+.justcontent-spacearo{
+     /*etraflarında eşit aralıklar ile yatay*/
+     display: flex;
+     justify-content: space-around;
+}
+
+
+.alignitems-start{
+    /*tepeye hizalama*/
+    display: flex;
+    align-items: flex-start;
+
+}
+.alignitems-end{
+    /*aşağı hizalama*/
+    display: flex;
+    align-items: flex-end;
+}
+.alignitems-center{
+    /*dikey orta hizalama*/
+    display: flex;
+    align-items: center;
+}
+.alignitems-base{
+    /* yazı çizgisine hizalama*/
+    display: flex;
+    align-items: baseline;
+}
+.alignitems-str{
+    /*boyunca uzarlar*/
+    display: flex;
+    align-items: stretch;
+}
+
+
+.direct-row{
+    /*yazı yönü ile aynı yönde yerleştirme*/
+    display: flex;
+    flex-direction:row
+}
+.direct-r-reserve{
+    /*yazı yönünün tersi yönünde yerleştirme*/
+    display: flex;
+    flex-direction:row-reverse;
+}
+.direct-column{
+    /*yukarıdan aşağı yerleştirme*/
+    display: flex;
+    flex-direction: column;
+}
+.direct-c-reserve{
+      /*aşağıdan yukarı yerleştirme*/
+      display: flex;
+      flex-direction:column-reverse;
+}
+
+
+.wrap-no{
+    /*herşey tek satırda*/
+    display: flex;
+    flex-wrap: nowrap;
+}
+.wrap-wrap{
+    /*satırlara bölme*/
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrap-reserve{
+    /*satırlara ters sırada bölme*/
+    display: flex;
+    flex-wrap: wrap-reverse;
+}

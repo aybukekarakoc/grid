@@ -1,92 +1,58 @@
-.justcontent-start{
-    /*sol tarafa hizalama*/
-    display: flex;
-    justify-content: start;
+/*Sütun düzeni belirleme*/
+.grid-temp-c{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /*ya da*/
+  grid-template-columns: 400px auto 400px;
+  /*ya da*/
+  grid-template-columns: 30% 50% 20%;
+  /*satırı 12 eşit sütuna bölecek*/
+  grid-template-columns: repeat(12, 1fr);
 }
-.justcontent-end{
-    /*sağ tarafa hizalama*/
-    display: flex;
-    justify-content: end;
-}
-.justcontent-center{
-    /*ortaya hizalama*/
-    display: flex;
-    justify-content: center;
-}
-.justcontent-spacebet{
-    /*eşit aralıklar ile yatay*/
-    display: flex;
-    justify-content: space-between;
-}
-.justcontent-spacearo{
-     /*etraflarında eşit aralıklar ile yatay*/
-     display: flex;
-     justify-content: space-around;
+/*Satır düzeni belirleme*/
+.grid-auto-r{
+    grid-auto-rows: 100px;  
+    /*satır içeriğine göre değişken veya en az satır yüksekliği 100px olarak belirler.*/
+    grid-auto-rows: minmax(100px, auto);
 }
 
-
-.alignitems-start{
-    /*tepeye hizalama*/
-    display: flex;
-    align-items: flex-start;
-
+/*Boşluk belirleme*/
+.grid-c-gap{
+    grid-column-gap: 50px;
 }
-.alignitems-end{
-    /*aşağı hizalama*/
-    display: flex;
-    align-items: flex-end;
+.grid-r-gap{
+    grid-row-gap: 20px;
 }
-.alignitems-center{
-    /*dikey orta hizalama*/
-    display: flex;
-    align-items: center;
-}
-.alignitems-base{
-    /* yazı çizgisine hizalama*/
-    display: flex;
-    align-items: baseline;
-}
-.alignitems-str{
-    /*boyunca uzarlar*/
-    display: flex;
-    align-items: stretch;
+.grid-gap{
+    /*ikisini aynı anda*/
+    grid-gap: 20px 50px;
 }
 
-
-.direct-row{
-    /*yazı yönü ile aynı yönde yerleştirme*/
-    display: flex;
-    flex-direction:row
+/*Sütun konumlandırma*/
+/*div:nth-child()*/
+.grid-c-start{
+    grid-column-start: 1;
 }
-.direct-r-reserve{
-    /*yazı yönünün tersi yönünde yerleştirme*/
-    display: flex;
-    flex-direction:row-reverse;
+.grid-c-end{
+    grid-column-end: 3;
 }
-.direct-column{
-    /*yukarıdan aşağı yerleştirme*/
-    display: flex;
-    flex-direction: column;
-}
-.direct-c-reserve{
-      /*aşağıdan yukarı yerleştirme*/
-      display: flex;
-      flex-direction:column-reverse;
+.grid-c{
+    grid-column: 1 / 3;
 }
 
+/*Satır konumlandırma*/
+/*div:nth-child()*/
+.grid-r-start{
+    grid-row-start: 1;
+}
+.grid-r-end{
+    grid-row-end: 3;
+}
+.grid-r{
+    grid-row: 1 / 3;
+}
+/*Satır ve sütun konumlandırma  birlikte*/
+.grid-area{
+    grid-area: 1 / 3 / 1 / 3;
+}
 
-.wrap-no{
-    /*herşey tek satırda*/
-    display: flex;
-    flex-wrap: nowrap;
-}
-.wrap-wrap{
-    /*satırlara bölme*/
-    display: flex;
-    flex-wrap: wrap;
-}
-.wrap-reserve{
-    /*satırlara ters sırada bölme*/
-    display: flex;
-    flex-wrap: wrap-reverse;
-}
